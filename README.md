@@ -2,10 +2,6 @@
 
 This is an example of how to use the [NextAuth.js](https://next-auth.js.org) library to add authentication to a [Next.js](https://nextjs.org) application with Typescript.
 
-Check out the TypeScript [documentation](https://next-auth.js.org/getting-started/typescript).
-
-This example application can be found under [`next-auth-typescript-example.vercel.app`](https://next-auth-typescript-example.vercel.app)
-
 ### About NextAuth.js
 
 NextAuth.js is an easy to implement, full-stack (client/server) open source authentication library designed for [Next.js](https://nextjs.org) and [Serverless](https://vercel.com).
@@ -19,17 +15,17 @@ Go to [next-auth.js.org](https://next-auth.js.org) for more information and docu
 ### 1. Clone the repository and install dependancies
 
 ```
-git clone git@github.com:jenisgadhiya910/next-auth-poc.git
-cd next-auth-typescript-example
+git clone git@github.com:jenisgadhiya910/poc-next-auth
+cd poc-next-auth
 npm install
 ```
 
 ### 2. Configure your local environment
 
-Copy the .env.local.example file in this directory to .env.local (which will be ignored by Git):
+Copy the .env.local.example file in this directory to .env (which will be ignored by Git):
 
 ```
-cp .env.local.example .env.local
+cp .env.local.example .env
 ```
 
 Add details for one or more providers (e.g. Google, Twitter, GitHub, Email, etc).
