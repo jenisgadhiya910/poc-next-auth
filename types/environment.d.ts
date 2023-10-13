@@ -23,6 +23,8 @@ namespace NodeJS {
     DISCORD_CLIENT_SECRET: string
     LINKEDIN_CLIENT_ID: string
     LINKEDIN_CLIENT_SECRET: string
+    SLACK_CLIENT_ID: string
+    SLACK_CLIENT_SECRET: string
     SECRET: string
   }
 }

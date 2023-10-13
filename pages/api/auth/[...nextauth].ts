@@ -9,6 +9,7 @@ import InstagramProvider from "next-auth/providers/instagram"
 import AtlassianProvider from "next-auth/providers/atlassian"
 import DiscordProvider from "next-auth/providers/discord"
 import LinkedInProvider from "next-auth/providers/linkedin"
+import SlackProvider from "next-auth/providers/slack"
 
 export default NextAuth({
   providers: [
@@ -65,6 +66,10 @@ export default NextAuth({
     LinkedInProvider({
       clientId: process.env.LINKEDIN_CLIENT_ID,
       clientSecret: process.env.LINKEDIN_CLIENT_SECRET,
+    }),
+    SlackProvider({
+      clientId: process.env.SLACK_CLIENT_ID,
+      clientSecret: process.env.SLACK_CLIENT_SECRET,
     }),
   ],
   secret: process.env.SECRET,
