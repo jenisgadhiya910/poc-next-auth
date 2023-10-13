@@ -27,6 +27,8 @@ namespace NodeJS {
     SLACK_CLIENT_SECRET: string
     MAILCHIMP_CLIENT_ID: string
     MAILCHIMP_CLIENT_SECRET: string
+    ZOHO_CLIENT_ID: string
+    ZOHO_CLIENT_SECRET: string
     SECRET: string
   }
 }
