@@ -25,6 +25,8 @@ namespace NodeJS {
     LINKEDIN_CLIENT_SECRET: string
     SLACK_CLIENT_ID: string
     SLACK_CLIENT_SECRET: string
+    MAILCHIMP_CLIENT_ID: string
+    MAILCHIMP_CLIENT_SECRET: string
     SECRET: string
   }
 }

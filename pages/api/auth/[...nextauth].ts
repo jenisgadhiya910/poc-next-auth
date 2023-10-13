@@ -10,6 +10,7 @@ import AtlassianProvider from "next-auth/providers/atlassian"
 import DiscordProvider from "next-auth/providers/discord"
 import LinkedInProvider from "next-auth/providers/linkedin"
 import SlackProvider from "next-auth/providers/slack"
+import MailchimpProvider from "next-auth/providers/mailchimp"
 
 export default NextAuth({
   providers: [
@@ -70,6 +71,10 @@ export default NextAuth({
     SlackProvider({
       clientId: process.env.SLACK_CLIENT_ID,
       clientSecret: process.env.SLACK_CLIENT_SECRET,
+    }),
+    MailchimpProvider({
+      clientId: process.env.MAILCHIMP_CLIENT_ID,
+      clientSecret: process.env.MAILCHIMP_CLIENT_SECRET,
     }),
   ],
   secret: process.env.SECRET,
