@@ -5,6 +5,7 @@ import FacebookProvider from "next-auth/providers/facebook"
 import GithubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
 import TwitterProvider from "next-auth/providers/twitter"
+import InstagramProvider from "next-auth/providers/instagram"
 
 export default NextAuth({
   providers: [
@@ -39,6 +40,10 @@ export default NextAuth({
     TwitterProvider({
       clientId: process.env.TWITTER_ID,
       clientSecret: process.env.TWITTER_SECRET,
+    }),
+    InstagramProvider({
+      clientId: process.env.INSTAGRAM_CLIENT_ID,
+      clientSecret: process.env.INSTAGRAM_CLIENT_SECRET,
     }),
   ],
   secret: process.env.SECRET,
