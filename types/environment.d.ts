@@ -17,6 +17,8 @@ namespace NodeJS {
     TWITTER_SECRET: string
     INSTAGRAM_CLIENT_ID: string
     INSTAGRAM_CLIENT_SECRET: string
+    ATLASSIAN_CLIENT_ID: string
+    ATLASSIAN_CLIENT_SECRET: string
     SECRET: string
   }
 }
