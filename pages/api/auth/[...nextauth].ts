@@ -7,6 +7,7 @@ import GoogleProvider from "next-auth/providers/google"
 import TwitterProvider from "next-auth/providers/twitter"
 import InstagramProvider from "next-auth/providers/instagram"
 import AtlassianProvider from "next-auth/providers/atlassian"
+import DiscordProvider from "next-auth/providers/discord"
 
 export default NextAuth({
   providers: [
@@ -55,6 +56,10 @@ export default NextAuth({
             "write:jira-work read:jira-work read:jira-user offline_access read:me",
         },
       },
+    }),
+    DiscordProvider({
+      clientId: process.env.DISCORD_CLIENT_ID,
+      clientSecret: process.env.DISCORD_CLIENT_SECRET,
     }),
   ],
   secret: process.env.SECRET,
