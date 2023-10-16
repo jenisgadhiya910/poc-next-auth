@@ -15,6 +15,20 @@ namespace NodeJS {
     GOOGLE_SECRET: string
     TWITTER_ID: string
     TWITTER_SECRET: string
+    INSTAGRAM_CLIENT_ID: string
+    INSTAGRAM_CLIENT_SECRET: string
+    ATLASSIAN_CLIENT_ID: string
+    ATLASSIAN_CLIENT_SECRET: string
+    DISCORD_CLIENT_ID: string
+    DISCORD_CLIENT_SECRET: string
+    LINKEDIN_CLIENT_ID: string
+    LINKEDIN_CLIENT_SECRET: string
+    SLACK_CLIENT_ID: string
+    SLACK_CLIENT_SECRET: string
+    MAILCHIMP_CLIENT_ID: string
+    MAILCHIMP_CLIENT_SECRET: string
+    ZOHO_CLIENT_ID: string
+    ZOHO_CLIENT_SECRET: string
     SECRET: string
   }
 }

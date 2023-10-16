@@ -5,6 +5,13 @@ import FacebookProvider from "next-auth/providers/facebook"
 import GithubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
 import TwitterProvider from "next-auth/providers/twitter"
+import InstagramProvider from "next-auth/providers/instagram"
+import AtlassianProvider from "next-auth/providers/atlassian"
+import DiscordProvider from "next-auth/providers/discord"
+import LinkedInProvider from "next-auth/providers/linkedin"
+import SlackProvider from "next-auth/providers/slack"
+import MailchimpProvider from "next-auth/providers/mailchimp"
+import ZohoProvider from "next-auth/providers/zoho"
 
 export default NextAuth({
   providers: [
@@ -39,6 +46,40 @@ export default NextAuth({
     TwitterProvider({
       clientId: process.env.TWITTER_ID,
       clientSecret: process.env.TWITTER_SECRET,
+    }),
+    InstagramProvider({
+      clientId: process.env.INSTAGRAM_CLIENT_ID,
+      clientSecret: process.env.INSTAGRAM_CLIENT_SECRET,
+    }),
+    AtlassianProvider({
+      clientId: process.env.ATLASSIAN_CLIENT_ID,
+      clientSecret: process.env.ATLASSIAN_CLIENT_SECRET,
+      authorization: {
+        params: {
+          scope:
+            "write:jira-work read:jira-work read:jira-user offline_access read:me",
+        },
+      },
+    }),
+    DiscordProvider({
+      clientId: process.env.DISCORD_CLIENT_ID,
+      clientSecret: process.env.DISCORD_CLIENT_SECRET,
+    }),
+    LinkedInProvider({
+      clientId: process.env.LINKEDIN_CLIENT_ID,
+      clientSecret: process.env.LINKEDIN_CLIENT_SECRET,
+    }),
+    SlackProvider({
+      clientId: process.env.SLACK_CLIENT_ID,
+      clientSecret: process.env.SLACK_CLIENT_SECRET,
+    }),
+    MailchimpProvider({
+      clientId: process.env.MAILCHIMP_CLIENT_ID,
+      clientSecret: process.env.MAILCHIMP_CLIENT_SECRET,
+    }),
+    ZohoProvider({
+      clientId: process.env.ZOHO_CLIENT_ID,
+      clientSecret: process.env.ZOHO_CLIENT_SECRET,
     }),
   ],
   secret: process.env.SECRET,
